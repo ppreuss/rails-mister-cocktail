@@ -1,0 +1,6 @@
+<h1>THIS IS MY HOMEPAGE !</h1>
+
+<%= link_to "create a new cocktail", new_cocktail_path, class: "btn btn-primary" %>
+<% @cocktails.each do | cocktail |   %>
+<%= cocktail.name %>
+<% end%>
